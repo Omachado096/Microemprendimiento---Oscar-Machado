@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="../index.html"> Inicio</a>
+                <a href="./accesorios.html"> Accesorios</a>
+                <a href="./gaming.html"> Gaming</a>
+                <a href="./musica.html"> Música</a>
+                <a href="#"> Contacto</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form>
+                <div>
+                    <label for="nombre"> Nombre Completo</label>
+                    <input id ="nombre" name ="nombre" type="text" placeholder="Ingrese Nombre Completo"minlength="3" maxlength="50" required autofocus autocomplete="off">
+        
+                </div>
+                <div>
+                    <label for="mail">Mail</label>
+                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div>
+                    <label for="contacto"> Numero de Contacto</label>
+                    <input id="contacto" name="contacto" type="tel" placeholder="Ingrese numero de Contacto" minlength="8" required>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Motivo de la consulta</legend>
+                        <div>
+                            <label for="consulta"></label>
+                            <select name="consulta" id="consulta">
+                                <option value="Compra" selected>Compra</option>
+                                <option value="Servicio Tecnico"> Servicio Tecnico</option>
+                                <option value="Reclamo o Sugerencia">Reclamo o Sugerencia</option>
+                            </select>
+    
+                        </div>
+                      
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="consulta"> Ingrese su consulta</label>
+                    <input id ="consulta" name ="consulta" type="text" minlength="3"  required autofocus autocomplete="off">
+        
+                </div>                
+                <div>
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <label for="news"> ¿Desea recibir promociones o avisos de productos nuevos?
+                            <input id="news" name="Newsletter" type="checkbox">
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                    </fieldset>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Maldonado - Uruguay</p>
+        <p>Envios a domicilio sin cargo</p>
+    </footer>
+    
+</body>
+</html>

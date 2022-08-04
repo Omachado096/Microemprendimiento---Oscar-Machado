@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#grid {
+    display:grid;
+    grid-template-areas: 
+    "head head head"
+    "cuerpo cuerpo cuerpo"
+    "pie pie pie";
+    grid-template-columns: 15% auto 20%;
+    grid-template-rows: 10vh 80vh 10vh;   
+}
+.navegador {
+    display: grid;
+    grid-template-columns: 15% auto 20%;
+    grid-area: head;
+    background-color:#00072d;
+    position: sticky;
+    
+}
+@media screen and (max-width: 768px) {
+    .navegador{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .navegadorLista{
+        display: none;
+    }
+}
+
+
+.navegadorLista {
+   
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto
+   
+    
+
+    
+}
+.boton {
+    border-radius: 20%;
+    background-color: #001c55;
+    color: #a6e1fa; 
+    text-decoration: none;
+    width: 70px;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+.multimedia {
+    text-align: right;
+    color: #a6e1fa;
+    display: inline-flex;
+    padding: 20px;
+}
+.search-box {
+    max-height: 5vh;
+    background-color:#457b9d;
+    margin-top: 0;
+    display: inline-block;
+    width: 100%;
+    /* color:black */
+    text-align: center;
+
+}
+.pieDePagina {
+    grid-area: pie;
+   
+    bottom: 0px;
+    text-align: right;
+    right: 0px;
+    background-color: #00072d;
+    width: 100%;
+    color: #a6e1fa;
+}
+.cuerpo{
+    grid-area: cuerpo;
+    margin: 0 auto;
+    
+    height: 100%;
+    width: 100%;
+    background-image:url(/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.pieDePaginaTexto {
+    position: relative;
+    right: 10px;
+
+}
+.tabla1 {
+    position: relative;
+    padding: 10px;
+    width:fit-content;
+    margin: 0 auto;
+    margin-top: 10vh;
+    color: #a6e1fa;
+}
+.mapa {
+display: inline-flex;
+margin-left: 10% ;
+margin-top: 5%;
+color: #a6e1fa;
+
+
+}
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 2%;
+}
+.productosCont{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #a6e1fa;
+    max-height: 30vh;
+    
+}
