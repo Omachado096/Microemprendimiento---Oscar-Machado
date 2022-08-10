@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Deliverys Informaticos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+    <link rel="stylesheet" href="cssBT/bootstrap.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        .navegador {
+            background-image: linear-gradient(to bottom, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
+        
+        }
     </style>
 </head>
+
 <body style="font-family: Lato">
-    <div id="grid">
-        <header class="navegador">
-            <div>  
-                <img style="max-height: 8vh; margin-left: 5vw; padding: 10px;" src="/images/logo.jpg" alt=""> 
+    <nav class="navbar navbar-expand-lg navbar-light navegador">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <header class="container row">
+            <div class=" col-2">
+                <img style="max-height: 8vh; margin-left: 5vw; padding: 10px;" src="/images/logo.jpg" alt="">
             </div>
             <nav class="navegadorLista">
-                <ul >
+                <ul>
                     <a class="boton" href=#> Inicio</a>
-                    <a class="boton" href="pages/accesorios.html"> Accesorios</a>      
+                    <a class="boton" href="pages/accesorios.html"> Accesorios</a>
                     <a class="boton" href="pages/gaming.html"> Gaming</a>
                     <a class="boton" href="pages/musica.html"> Música</a>
                     <a class="boton" href="pages/contacto.html"> Contacto</a>
                 </ul>
             </nav>
-            <div class="multimedia"> 
+            <div class="multimedia">
                 <p> Reproductor multimedia</p>
             </div>
         </header>
         <main class="cuerpo">
-            <section class="search-box">
-                <p> Aqui iría un buscador</p>
-
-            </section>
             <section id="productos">
-                <table class="tabla1" border="0" cellpadding='10' cellspacing='10' >
+                <table class="tabla1" border="0" cellpadding='10' cellspacing='10'>
                     <tr>
-                        <td >  <img style="max-width: 20vw; max-height: 20vh;" src="/images/16.jpg" alt=""> </td>
+                        <td> <img style="max-width: 20vw; max-height: 20vh;" src="/images/16.jpg" alt=""> </td>
                         <td>Tropical - Plena - Actual - Old Hits - Folklore</td>
                         <td> $$$ </td>
                     </tr>
@@ -54,12 +99,16 @@
                         <td> Lorem ipsum dolor sit amet consectetur</td>
                         <td> $$$</td>
                     </tr>
-        
+
                 </table>
             </section>
             <section class="mapa">
-                <iframe class="mapaImg" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209471.82402649708!2d-54.96368761481301!3d-34.88141535702422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1658267752829!5m2!1ses-419!2suy" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p style="margin-left: 2%"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dicta voluptas quam aliquid ex enim eveniet dignissimos laudantium cumque maiores.
+                <iframe class="mapaImg"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d209471.82402649708!2d-54.96368761481301!3d-34.88141535702422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1658267752829!5m2!1ses-419!2suy"
+                    width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p style="margin-left: 2%"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dicta
+                    voluptas quam aliquid ex enim eveniet dignissimos laudantium cumque maiores.
                 </p>
             </section>
         </main>
@@ -68,5 +117,10 @@
             <p class="pieDePaginaTexto">Envios a domicilio sin cargo</p>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
