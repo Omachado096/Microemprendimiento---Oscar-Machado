@@ -236,7 +236,30 @@ body {
       opacity: 1;
     }
   }
-  
+  .social{
+    width:200px;
+    display:flex;
+    
+    border: none;
+}
+.social >a{
+    width:25%;
+    font-size:2rem;
+   
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    text-decoration: none;
+    
+    margin:10px;
+    transition: 0.4s;
+}
+.social >a:hover{
+   transform:translateY(-10px);
+   color: var(--color);
+}
 /* {
     margin: 0;
     padding: 0;

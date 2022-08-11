@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
  
-   
 </head>
 <body style=" background-image:url(../images/fondo.jpg);" >
     <nav class="navbar navbar-expand-lg navbar-light navegador position-sticky scale-in-top">
@@ -26,12 +26,12 @@
                         <a class="nav-link active" style="color: #a6e1fa" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item botonAn col-lg-2 col-md-12">
-                        <a class="nav-link disabled" style="color: #a6e1fa" href="../pages/accesorios.html" tabindex="-1"
-                            aria-disabled="true">Accesorios</a>
+                        <a class="nav-link " style="color: #a6e1fa" href="../pages/accesorios.html" tabindex="-1"
+                            aria-disabled="false">Accesorios</a>
                     </li>
                     <li class="nav-item botonAn col-lg-2 col-md-12">
-                        <a class="nav-link disabled" style="color: #a6e1fa" href="../pages/gaming.html" tabindex="-1"
-                            aria-disabled="true">Gaming</a>
+                        <a class="nav-link " style="color: #a6e1fa" href="../pages/gaming.html" tabindex="-1"
+                            aria-disabled="false">Gaming</a>
                     </li>
                     <li class="nav-item botonAn col-lg-2 col-md-12">
                         <a class="nav-link active" style="color: #a6e1fa" href="#">Música</a>
@@ -51,21 +51,35 @@
     <main >
     
         <div class=" scale-in-top2 >
-            <section class="container row p-3 " style="height:40vh ;">
-                <div class="productosCont col-lg-6 col-md-12 mt-3">
+            <section style="height:40vh ;" class="container-fluid row p-3">
+                <div class="productosCont col-lg-3 col-md-12 mt-3 p-3">
                     <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fdelivery.informatico.maldonado%2Fvideos%2F853889435590440%2F&show_text=false&width=560&t=0" width="auto" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                     <p> video publicitario</p>
                  </div>
-                <div class="productosCont col-lg-6 col-md-12 mt-3">
+                <div class="productosCont col-lg-3 col-md-12 mt-3 p-3">
                     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdelivery.informatico.maldonado%2Fphotos%2Fa.1724183254525342%2F3266115636998755%2F%3Ftype%3D3&show_text=true&width=500" width="auto" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     <p> imagen publicitaria</p>
                 </div>
             </section>
         </div>
     </main>
-    <footer class="position-absolute bottom-0 start-0 pieDePagin w-100 m-0 p-0">
-        <p class="pieDePaginaTexto">Maldonado - Uruguay</p>
-        <p class="pieDePaginaTexto">Envios a domicilio sin cargo</p>
+    <footer class="position-absolute bottom-0 start-0 pieDePagin w-100 m-0 p-0 row">
+        <div class="col-md-3 d-sm-none d-md-inline-block">
+            
+            <p class="fs-6">Nos ubicamos en la feria vecinal de los domingos, puesto 👉🏻Nro 317👈🏻</p>
+       </div>
+        <div class="social col-md-4 col-sm-12 order-sm-first order-md-2 align-items-start">
+            <a href="https://www.facebook.com/delivery.informatico.maldonado"><i class="ri-facebook-circle-line icon" style="color:#1814ff"></i></a>
+            <a href="https://wa.me/59892103790"> <i class="ri-whatsapp-line icon" style="color:rgb(0, 134, 0)"></i></a>
+            <a href="https://www.instagram.com/delivery.informatico.maldonado/"><i class="ri-instagram-line icon" style="color:#ea1e5f"></i></a>
+            
+        </div>
+        <div class="col-md-3 col-sm-12 order-md-3">
+            <p class="fs-6 text-center">Llevamos a domicilio todos los días! 
+                📍Maldonado, San Carlos y Piriapolis</p>
+            
+       </div>
+        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
