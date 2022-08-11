@@ -9,81 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
-    <link rel="stylesheet" href="cssBT/bootstrap.css">
-    <style>
-        * { 
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        body { min-height: 100vh; }
-        
-
-        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-        .navegador {
-            background-image: linear-gradient(to bottom, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
-        }
-        .pieDePagin {
-            background-image: linear-gradient(to top, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
-            color: #a6e1fa;
-            text-align: right;
-        }
-        .botonAn {
-            border-radius: 20%;
-
-            animation: float 6s ease-in-out infinite;
-
-        }
-
-        .botonColr {
-            color: #a6e1fa;
-        }
-
-
-        @keyframes float {
-
-            0% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-
-            50% {
-                box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-                transform: translatey(-10px);
-            }
-
-            100% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-        }
-        .productosCont{
-            display: inline-flex;
-            align-items: center;
-            text-align: center;
-            color: #a6e1fa;
-            max-height: 50vh;
-            filter: opacity(.5);
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            }
-.productosCont:hover {
-    filter: opacity(1);
-    border-radius:15%;
-    box-shadow: 0px 0px 15px 15px #a6e1fa;
-    -webkit-box-shadow: 0px 0px 15px 15px #a6e1fa;
-    overflow: hidden;
-
-}
-    </style>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
 </head>
 
-<body  style="font-family: Lato; background-image:url(/images/fondo.jpg);">
-    <nav class="navbar navbar-expand-lg navbar-light navegador position-sticky">
+<body style="font-family: Lato; background-image:url(/images/fondo.jpg);">
+    <nav class="navbar navbar-expand-lg navbar-light navegador position-sticky scale-in-top">
         <div class="container">
             <a class="navbar-brand" href="#"> <img style="max-height: 8vh;" src="/images/logo.jpg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -119,9 +52,9 @@
             </div>
         </div>
     </nav>
-    <div class=" mt-0 h-100 w-100 d-inline-block" style="">
+    <div class=" mt-0 h-100 w-100 d-inline-block " >
 
-        <main class="container row p-3">
+        <main class="container row p-3 scale-in-top2">
             <div class="col-lg-6 col-md-12 mt-3">
                 <iframe src="https://drive.google.com/file/d/1RMCWZjn5rok1Eqgtk_qmib0FNFtB8RqV/preview" width="100%"
                     height="100%" autoplay="autoplay" controls="muted" frameborder="0" scrolling="" allow="
@@ -130,33 +63,38 @@
             <div class="col-lg-6 col-md-12 mt-3">
                 <div id="carouselExampleControls" class="carousel  slide   " data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner text-center  ">
-                      <div class="carousel-item active  " data-bs-interval="10000">
-                        <img src="./images/16.jpg" class="productosCont  " alt="...">
-                        
-                      </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/Auricular Gamer.jpg" class="productosCont" alt="...">
-                       
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./images/Soporte Tv.jpg" class="productosCont" alt="...">
-                       
-                      </div>
+                        <div class="carousel-item active  " data-bs-interval="10000">
+                            <img src="./images/16.jpg" class="productosCont  " alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/Auricular Gamer.jpg" class="productosCont" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/Soporte Tv.jpg" class="productosCont" alt="...">
+
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
-                  </div>
+                </div>
             </div>
             <!-- <section class="mapa">
                 <iframe class="mapaImg"
@@ -168,13 +106,22 @@
                 </p>
             </section> -->
         </main>
-        <footer class="position-absolute bottom-0 start-0 pieDePagin w-100 m-0 p-0">
-            <p class="pieDePaginaTexto">Maldonado - Uruguay</p>
-            <p class="pieDePaginaTexto">Envios a domicilio sin cargo</p>
+        <footer class="position-absolute bottom-0 start-0 pieDePagin w-100 m-0 p-0 row">
+           <div class="col-6">
+            <a href="https://www.facebook.com/delivery.informatico.maldonado" target="_blank">    
+                <div class="social"><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670124.png?token=exp=1660252085~hmac=307a610f45dae2ef83d95195780d3056"/></div>
+              </a>
+           </div>
+            <div class="col-6">
+                <p class="pieDePaginaTexto">Maldonado - Uruguay</p>
+                <p class="pieDePaginaTexto">Envios a domicilio sin cargo</p>
+           </div>
+            
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     </div>
 </body>
+
 </html>

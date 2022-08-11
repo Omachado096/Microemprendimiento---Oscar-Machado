@@ -5,78 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música</title>
-    <link rel="stylesheet" href="../cssBT/bootstrap.css">
-    <style>
-        * { 
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        body { min-height: 100vh; }
-        
-
-        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-        .navegador {
-            background-image: linear-gradient(to bottom, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
-        }
-        .pieDePagin {
-            background-image: linear-gradient(to top, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
-            color: #a6e1fa;
-            text-align: right;
-        }
-        .botonAn {
-            border-radius: 20%;
-
-            animation: float 6s ease-in-out infinite;
-
-        }
-
-        .botonColr {
-            color: #a6e1fa;
-        }
-
-
-        @keyframes float {
-
-            0% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-
-            50% {
-                box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-                transform: translatey(-10px);
-            }
-
-            100% {
-                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-                transform: translatey(0px);
-            }
-        }
-        .productosCont{
-            display: inline-flex;
-            align-items: center;
-            text-align: center;
-            color: #a6e1fa;
-            max-height: 50vh;
-            filter: opacity(.5);
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            }
-.productosCont:hover {
-    filter: opacity(1);
-    border-radius:15%;
-    box-shadow: 0px 0px 15px 15px #a6e1fa;
-    -webkit-box-shadow: 0px 0px 15px 15px #a6e1fa;
-    overflow: hidden;
-
-}
-    </style>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+   
 </head>
-<body style=" background-image:url(../images/fondo.jpg);"" >
+<body style=" background-image:url(../images/fondo.jpg);" >
     <nav class="navbar navbar-expand-lg navbar-light navegador position-sticky">
         <div class="container">
             <a class="navbar-brand" href="#"> <img style="max-height: 8vh;" src="../images/logo.jpg" alt=""></a>
