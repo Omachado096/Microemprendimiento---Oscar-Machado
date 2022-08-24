@@ -6,3 +6,16 @@ $color1: #a6e1fa;
 /* Fuentes */
 $fuente1: 'Lato', sans-serif;
 $fuente2: 'Kanit', sans-serif;
+
+$fuentes:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:900
+);
+@mixin background-TB($direccion) {
+        background-image: linear-gradient(to $direccion, #00072d, #000d34, #00123c, #001543, #00184b, #012155, #022a5f, #033369, #104577, #205784, #326991, #457b9d);
+
+}
