@@ -2,7 +2,7 @@
 
 
 * {
-    margin: 0;
+    margin: 0 !important ;
     padding: 0;
     box-sizing: border-box;
         
@@ -81,6 +81,7 @@ body {
         box-shadow: 0px 0px 15px 15px $color1;
         -webkit-box-shadow: 0px 0px 15px 15px $color1;
         overflow: hidden;
+        -webkit-transform: scale(1.1);
     }
 }
 
